@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy 19th Birthday, Riddhi! 🌸✨</title>
+  <meta name="description" content="A personalized, elegant, and interactive 19th birthday celebration website for Riddhi, featuring white lily aesthetics, memories, and birthday surprises.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@500;600;700&family=Great+Vibes&family=Italianno&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Maven+Pro:wght@400;500;600;700;800;900&family=MonteCarlo&family=Parisienne&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Background Audio: Apna Bana Le -->
+  <audio id="bg-music" loop preload="auto">
+    <source src="assets/apna_bana_le.webm" type="audio/webm">
+    <source src="assets/apna_bana_le.m4a" type="audio/mp4">
+  </audio>
+
+  <!-- Floating White Lily Petals Canvas Background -->
+  <canvas id="petals-canvas"></canvas>
+
+  <!-- ==========================================================================
+       SECTION 1: Interactive Cover Page (Password Gate)
+       ========================================================================== -->
+  <div id="cover-page">
+    <div class="cover-split">
+      
+      <!-- Left Column: Riddhi Portrait -->
+      <div class="cover-left" id="cover-portrait-root"></div>
+
+      <!-- Right Column: Magnetic Password Gate -->
+      <div class="cover-right">
+        <div class="gate-card">
+          <h2>Enter Password</h2>
+          <p class="gate-sub">To unlock Riddhi's secret birthday world</p>
+
+          <!-- Password Dots Display -->
+          <div class="password-display" id="password-display">
+            <div class="dot-slot"></div>
+            <div class="dot-slot"></div>
+            <div class="dot-slot"></div>
+            <div class="dot-slot"></div>
+          </div>
+
+          <!-- Magnetic Keypad Grid -->
+          <div class="keypad-grid">
+            <button class="key-btn" data-key="1">1</button>
+            <button class="key-btn" data-key="2">2</button>
+            <button class="key-btn" data-key="3">3</button>
+            <button class="key-btn" data-key="4">4</button>
+            <button class="key-btn" data-key="5">5</button>
+            <button class="key-btn" data-key="6">6</button>
+            <button class="key-btn" data-key="7">7</button>
+            <button class="key-btn" data-key="8">8</button>
+            <button class="key-btn" data-key="9">9</button>
+            <button class="key-btn action-btn" data-key="clear">Clear</button>
+            <button class="key-btn" data-key="0">0</button>
+            <button class="key-btn action-btn" data-key="delete">⌫</button>
+          </div>
+
+          <p class="hint-text">Hint: Enter Riddhi's special secret birthday passcode ✨</p>
+          <div id="error-msg" class="error-msg"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Central Reveal Message Overlay -->
+  <div id="reveal-overlay">
+    <div class="reveal-box">
+      <h1 class="reveal-title transcity-text">Be Ready to Enter Riddhi's World !! 🌸✨</h1>
+      <p style="color: #64748B; font-size: 1.1rem;">Opening her digital celebration in...</p>
+      <div class="reveal-countdown" id="countdown-num">3</div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Top Glassmorphic Navigation Header
+       ========================================================================== -->
+  <header id="main-nav" class="nav-header">
+    <div class="nav-container">
+      <a href="#home" class="nav-brand" data-page="home">
+        <span class="brand-sparkle">🌸</span>
+        <span class="brand-text">RIDDHI • 19</span>
+      </a>
+
+      <!-- React Animated Apple-Style Dock Navigation -->
+      <div id="dock-nav-root" class="flex-1 flex justify-center"></div>
+
+      <div class="nav-actions">
+        <button id="nav-audio-btn" class="nav-audio-btn" title="Toggle Audio">
+          <span id="nav-sound-icon">🔇</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       Main Page Views Wrapper
+       ========================================================================== -->
+  <main class="main-wrapper">
+
+    <!-- PAGE 1: HOME (Hero & Welcome) -->
+    <div id="page-home" class="page-view active">
+      <section id="hero-section">
+        <div class="video-container">
+          <video id="hero-bg-video" class="hero-video" autoplay muted loop playsinline>
+            <source src="RIDDHI_IS_APPEARING_TIMES_RE (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+          <div class="video-vignette"></div>
+        </div>
+
+        <!-- Music Toggle -->
+        <button id="audio-toggle-btn" class="audio-toggle-btn">
+          <span id="sound-icon" class="sound-icon">🎵</span>
+          <span id="sound-text">Play Music</span>
+        </button>
+
+        <!-- Scroll Down Indicator -->
+        <div class="scroll-indicator" onclick="document.getElementById('welcome-section').scrollIntoView({behavior: 'smooth'})">
+          <span>Scroll Down</span>
+          <span style="font-size: 1.2rem;">↓</span>
+        </div>
+      </section>
+
+      <section id="welcome-section" class="section-padding">
+        <div class="welcome-card">
+          
+
+
+          <span class="lily-icon-header">🤍</span>
+          <p class="section-subtitle">A Special Milestone</p>
+          <h1 class="welcome-headline">Happy 19th Birthday, Riddhi!</h1>
+          
+          <p class="welcome-text">
+            Welcome to your very own sanctuary of memories, like, and white lily magic. 
+            Nineteen years of spreading laughter, kindness, and beauty to everyone around you. 
+            May your 19th year bloom as gracefully and elegantly as your favourite white lilies!
+          </p>
+
+          <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+            <a href="#surprises" class="btn-magnetic nav-link" data-page="surprises" style="background: linear-gradient(135deg, rgba(186, 230, 253, 0.2), rgba(10, 17, 40, 0.9)); border: 1px solid var(--accent-ice-blue);">
+              <span>Discover Your Birthday Surprise 🤍</span>
+            </a>
+            <a href="#us" class="btn-magnetic nav-link" data-page="us">
+              <span>Explore Our Story 🤍</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PAGE 2: MEMORIES & PHOTO GALLERY -->
+    <div id="page-gallery" class="page-view">
+      <section id="gallery-section">
+        <div id="root"></div>
+      </section>
+    </div>
+
+    <!-- PAGE 3: US - OUR STORY & JOURNEY -->
+    <div id="page-us" class="page-view">
+      <section id="us-section" class="section-padding">
+        
+        <!-- Header Banner -->
+        <div class="section-title-wrap">
+          <span class="section-subtitle great-vibes-text" style="font-size: 2.8rem; font-weight: normal;">The Story of Sarvagya & Riddhi 🤍</span>
+          <h2 class="section-title">Us — Our Magical Journey</h2>
+          <p class="section-desc">Every moment with you is my favorite memory. Here&apos;s a celebration of our like, laughter, and forever bond.</p>
+        </div>
+
+        <!-- Relationship Highlights Stats Grid -->
+        <div class="us-stats-grid">
+          <div class="us-stat-card">
+            <div class="us-stat-icon">🤍</div>
+            <div class="us-stat-number">Countless</div>
+            <div class="us-stat-label">Shared Smiles</div>
+          </div>
+          <div class="us-stat-card">
+            <div class="us-stat-icon">☕</div>
+            <div class="us-stat-number">Endless</div>
+            <div class="us-stat-label">Late Night Talks</div>
+          </div>
+          <div class="us-stat-card">
+            <div class="us-stat-icon">🌸</div>
+            <div class="us-stat-number">Infinite</div>
+            <div class="us-stat-label">Like & Warmth</div>
+          </div>
+          <div class="us-stat-card">
+            <div class="us-stat-icon">✨</div>
+            <div class="us-stat-number">19th B&apos;day</div>
+            <div class="us-stat-label">Milestone Together</div>
+          </div>
+        </div>
+
+        <!-- React Pixel Transition Memory Chapters -->
+        <div id="memory-chapters-root"></div>
+
+
+
+        <!-- Interactive Love Note Card -->
+        <div class="us-love-note-box">
+          <div class="us-love-note-inner">
+            <span class="handwritten" style="font-size: 2.4rem;">What Riddhi Means to Me 🤍</span>
+            <p class="us-quote-text">
+              &ldquo;You are my best friend, my greatest comfort, and the most beautiful part of my life. 
+              Thank you for being you, for filling my days with warmth, and for liking me. 
+              Happy 19th Birthday, gorgeous!&rdquo;
+            </p>
+            <div class="us-author-signature">
+              — Forever Yours, <span class="rustic-text" style="font-size: 2.5rem; font-weight: normal;">Sarvagya</span>
+            </div>
+          </div>
+        </div>
+
+      </section>
+    </div>
+
+    <!-- PAGE 4: SURPRISES & GRAND FINALE -->
+    <div id="page-surprises" class="page-view">
+      <section id="finale-section" class="section-padding">
+        <div class="surprise-box">
+          <span class="section-subtitle">Grand Finale</span>
+          <h2 class="section-title orlington-text" style="font-size: 3.2rem; font-weight: normal;">Blow Your Birthday Candles! 🎂</h2>
+
+          <!-- Interactive Photo-Inspired 2-Tier Birthday Cake -->
+          <div class="cake-photo-scene">
+            <div class="cake-photo-wrapper">
+              
+              <!-- 3D Pedestal Plate Base -->
+              <div class="cake-base-plate"></div>
+
+              <!-- Bottom Tier -->
+              <div class="cake-tier tier-bottom-photo">
+                <div class="tier-top-cap"></div>
+                <div class="tier-side-wall"></div>
+                <div class="pearl-border-bottom"></div>
+                
+                <!-- Pearl clusters on bottom tier -->
+                <div class="pearl-cluster p-cluster-1"></div>
+                <div class="pearl-cluster p-cluster-2"></div>
+                
+                <!-- Side Floral Bunch -->
+                <div class="floral-bunch floral-side">
+                  <span class="rose rose-ice-blue">🌹</span>
+                  <span class="leaf-sprig">🌿</span>
+                  <span class="rose rose-pearl">🌸</span>
+                </div>
+              </div>
+
+              <!-- Top Tier -->
+              <div class="cake-tier tier-top-photo">
+                <div class="tier-top-cap"></div>
+                <div class="tier-side-wall"></div>
+                <div class="pearl-border-top"></div>
+
+                <!-- Pearl clusters on top tier -->
+                <div class="pearl-cluster p-cluster-3"></div>
+                <div class="pearl-cluster p-cluster-4"></div>
+
+                <!-- Top Floral Bunch -->
+                <div class="floral-bunch floral-top">
+                  <span class="rose rose-pearl-large">🌹</span>
+                  <span class="rose rose-ice-blue-medium">🌸</span>
+                  <span class="leaf-sprig">🌿</span>
+                </div>
+
+                <!-- Cake Topper Sign -->
+                <div class="cake-topper-sign">
+                  <div class="topper-badge rustic-text">Riddhi</div>
+                  <div class="topper-stick"></div>
+                </div>
+
+                <!-- 19 Candles Ring injected by app.js -->
+                <div class="candles-ring-3d" id="candles-row"></div>
+              </div>
+
+            </div>
+          </div>
+
+          <p class="cake-instruction" id="cake-instruction">
+            Click each of your birthday candles to blow them out and make your 19th birthday wish!
+          </p>
+
+          <div style="margin-top: 2.5rem; display: flex; justify-content: center;">
+            <button class="btn-magnetic" id="open-surprise-btn" style="background: linear-gradient(135deg, rgba(186, 230, 253, 0.25), rgba(10, 17, 40, 0.95)); border: 1px solid var(--accent-ice-blue); padding: 12px 28px;">
+              <span>✉️ Open Riddhi's Birthday Envelope ✨</span>
+            </button>
+          </div>
+
+          <!-- Personal Birthday Letter & Poem -->
+          <div style="margin-top: 3.5rem; text-align: center; border-top: 1px dashed var(--glass-border); padding-top: 2.5rem;">
+            <h3 class="handwritten" style="margin-bottom: 1.2rem; font-size: 2.8rem; text-shadow: 0 0 15px rgba(186, 230, 253, 0.4);">A Poem for Riddhi</h3>
+            <p class="serif-accent" style="font-family: var(--font-letter); font-size: 1.35rem; color: #F1F5F9; max-width: 650px; margin: 0 auto; line-height: 2.0; font-style: italic; text-shadow: 0 1px 3px rgba(0,0,0,0.6);">
+              "Like white lilies in the morning sun,<br>
+              Your journey at 19 has just begun.<br>
+              With grace in your step and light in your heart,<br>
+              May every new day be a masterpiece of art.<br>
+              Happy 19th Birthday, Riddhi!"
+            </p>
+            <p class="eagle-horizon-text" style="font-size: 2.6rem; color: #FFFFFF; margin-top: 1.2rem; text-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);">
+              — With all my like, Sarvagya
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ==========================================================================
+       SECTION 7: "A Heartfelt Unveiling" Interactive Surprise Overlay
+       ========================================================================== -->
+  <div class="heartfelt-overlay" id="heartfelt-unveiling-overlay">
+    <button class="close-overlay-btn" id="close-surprise-overlay">&times;</button>
+    
+    <!-- Canvas layer for white/ice-blue particle sparkles burst -->
+    <canvas id="heart-sparkles-canvas"></canvas>
+    
+    <!-- Dramatic 3D Theme Envelope Stage -->
+    <div class="unveil-envelope-stage" id="unveil-target-stage">
+      <div class="aim-prompt-banner" id="envelope-prompt">
+        <span class="aim-icon">✉️</span>
+        <span>Click the Envelope to Unseal & Open Riddhi's Birthday Letter!</span>
+      </div>
+
+      <!-- 3D Suspended Envelope Container -->
+      <div class="envelope-3d-wrapper" id="envelope-3d-wrapper">
+        <div class="envelope-motion-aura"></div>
+
+        <!-- 3D Envelope Box -->
+        <div class="envelope-3d-box" id="envelope-3d-box">
+          
+          <!-- Back Wall & Inner Pocket -->
+          <div class="envelope-back-wall"></div>
+
+          <!-- Letter Card Sheet Inside Envelope -->
+          <div class="envelope-letter-sheet" id="envelope-letter-sheet">
+            <div class="sheet-header rustic-text">For Dearest Riddhi</div>
+            <div class="sheet-excerpt">"Today is all about celebrating you..."</div>
+          </div>
+
+          <!-- Front V-Pocket -->
+          <div class="envelope-front-pocket"></div>
+
+          <!-- 3D V-Shaped Top Flap -->
+          <div class="envelope-v-flap" id="envelope-v-flap">
+            <svg viewBox="0 0 400 160" class="v-flap-svg" preserveAspectRatio="none">
+              <polygon points="0,0 400,0 200,140" fill="url(#vFlapGradient)" stroke="rgba(186, 230, 253, 0.5)" stroke-width="2" />
+              <defs>
+                <linearGradient id="vFlapGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#0E1B3D" />
+                  <stop offset="100%" stop-color="#060C1E" />
+                </linearGradient>
+              </defs>
+            </svg>
+            
+            <!-- Glowing Wax Seal on V-Point -->
+            <div class="envelope-wax-seal" id="envelope-wax-seal">🤍</div>
+          </div>
+
+          <!-- Stamp Badge -->
+          <div class="envelope-stamp-badge">
+            <span class="stamp-title">19th Birthday</span>
+            <span class="stamp-sub">AUG 09, 2026</span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- The Heartfelt Unveiling Letter Box -->
+    <div class="unveil-letter-card relative rounded-[64px]" id="heartfelt-letter-card">
+      <div id="letter-border-beam-root" class="absolute inset-0 pointer-events-none rounded-[64px] overflow-hidden z-20"></div>
+      <div class="letter-header-badge">A Heartfelt Unveiling</div>
+      
+      <h2 class="letter-salutation letter-para">To My Dearest Riddhi,</h2>
+      
+      <p class="letter-para subheadline-para">
+        Happy 19th Birthday.
+      </p>
+
+      <p class="letter-para">
+        Today is all about celebrating you, and I wanted to take a moment, away from all the noise, to tell you, from my heart, just how much you mean to me. Nineteen feels like such a special milestone, and seeing the incredible person you are – strong, kind, brilliant – fills me with so much pride. You have this amazing way of making everything around you brighter, and I feel like the luckiest person in the world to be by your side.
+      </p>
+
+      <p class="letter-para">
+        I don't think I say it enough, but I appreciate you more than words can express. You have this incredible gift for understanding me, sometimes without me even needing to speak, and your constant support gives me the courage to be my best self. When I'm with you, everything feels lighter, peaceful, and simply <em>right</em>. You are my absolute favorite person and my safest place.
+      </p>
+
+      <p class="letter-para">
+        There are so many things I like about you – your kindness, the way your mind works, the passion you pour into everything you care about. You're beautiful inside and out, but it's your heart, your humor, and your incredible spirit that truly captivate me. I'm always amazed by your strength, your grace, and how effortlessly you bring joy to everyone around you.
+      </p>
+
+      <p class="letter-para">
+        As you step into this new year, I want you to know I'm always here, cheering you on louder than anyone. I can't wait to see all the amazing things you'll do, the dreams you'll chase, and how you'll continue to grow. Whatever Nineteen brings, I promise to be right here with you, through every high and every low.
+      </p>
+
+      <p class="letter-para">
+        Thank you for choosing me, for liking me, and for just being the extraordinary person you are. I hope your birthday is as beautiful and perfect as you deserve.
+      </p>
+
+      <p class="letter-para climax-para">
+        Happy Birthday, gorgeous. I like you more than words can say.
+      </p>
+
+      <div class="letter-para signature-block">
+        <span class="signature-salutation">Forever & Always Yours,</span>
+        <span class="signature-name rustic-text" style="font-family: var(--font-rustic) !important; font-size: 3.2rem; font-weight: normal;">Sarvagya</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- React Application Script -->
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+</html>
