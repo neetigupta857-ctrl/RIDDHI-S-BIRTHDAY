@@ -15,7 +15,7 @@ export function GlareCardDemo() {
       <GlareCard className="flex flex-col items-center justify-center relative">
         <img
           className="h-full w-full absolute inset-0 object-cover"
-          src="assets/riddhi_red_top.jpg"
+          src="assets/riddhi/Gemini_Generated_Image_goainogoainogoai.png"
           alt="Cozy & Botanical Vibes"
         />
         <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
@@ -29,7 +29,7 @@ export function GlareCardDemo() {
       <GlareCard className="flex flex-col items-start justify-end py-8 px-6 relative">
         <img
           className="h-full w-full absolute inset-0 object-cover"
-          src="assets/riddhi_green_ethnic.jpg"
+          src="assets/riddhi/Gemini_Generated_Image_usjlbcusjlbcusjl.png"
           alt="Festive Night Sparkle"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
@@ -53,89 +53,71 @@ export function RiddhiPhotoGallery() {
       title: "19th Birthday Milestone",
       category: "Special",
       icon: <Heart className="w-5 h-5 text-slate-100 fill-white" />,
-      image: "assets/riddhi_portrait.png",
+      image: "assets/riddhi/Gemini_Generated_Image_usjlbcusjlbcusjl.png",
       description: "Embodying beauty, elegance, and warmth at 19.",
       objectPosition: "object-center",
     },
     {
       id: 2,
-      title: "Royal Red Lehenga",
+      title: "Royal Heritage Grace",
       category: "Royal Heritage",
       icon: <Sparkles className="w-5 h-5 text-amber-300" />,
-      image: "assets/riddhi_red_lehenga.jpg",
-      description: "Stunning in ornate red & gold traditional heritage attire.",
+      image: "assets/riddhi/WhatsApp Image 2026-08-01 at 00.42.51.jpeg",
+      description: "Stunning in ornate traditional heritage attire.",
       objectPosition: "object-top",
     },
     {
       id: 3,
-      title: "Golden Anarkali Grace",
+      title: "Golden Sunshine Smile",
       category: "Sunshine",
       icon: <Sun className="w-5 h-5 text-amber-300" />,
-      image: "assets/riddhi_yellow_anarkali.jpg",
-      description: "Radiant in rich yellow silk and delicate embroidery.",
+      image: "assets/riddhi/Gemini_Generated_Image_2mnfx32mnfx32mnf.png",
+      description: "Radiant warmth and delicate charm.",
       objectPosition: "object-top",
     },
     {
       id: 4,
-      title: "Elegance by the Pillars",
+      title: "Pure Elegance",
       category: "Elegance",
       icon: <Flower2 className="w-5 h-5 text-pink-300" />,
-      image: "assets/riddhi_saree_steps.jpg",
-      description: "Poised and beautiful standing by grand white marble steps.",
+      image: "assets/riddhi/Gemini_Generated_Image_68xfa868xfa868xf.png",
+      description: "Poised and beautiful, blooming like a white lily.",
       objectPosition: "object-top",
     },
     {
       id: 5,
-      title: "Serene Courtyard Pose",
+      title: "Serene Moments",
       category: "Nature",
       icon: <Flower2 className="w-5 h-5 text-emerald-300" />,
-      image: "assets/riddhi_saree_courtyard.jpg",
-      description: "Graceful outdoors amidst lush manicured green lawns.",
+      image: "assets/riddhi/Gemini_Generated_Image_efkdd3efkdd3efkd.png",
+      description: "Graceful and captivating in every frame.",
       objectPosition: "object-top",
     },
     {
       id: 6,
-      title: "Elegance in Black Saree",
-      category: "Style",
-      icon: <Camera className="w-5 h-5 text-indigo-300" />,
-      image: "assets/riddhi_saree_garden.jpg",
-      description: "Soft sunshine and timeless traditional elegance.",
-      objectPosition: "object-top",
-    },
-    {
-      id: 7,
-      title: "Cozy & Botanical Vibes",
+      title: "Cozy Passions",
       category: "Passions",
       icon: <Coffee className="w-5 h-5 text-amber-300" />,
-      image: "assets/riddhi_red_top.jpg",
-      description: "Surrounded by warm brick aesthetics, greenery, and gentle smiles.",
+      image: "assets/riddhi/Gemini_Generated_Image_j7h2nnj7h2nnj7h2.png",
+      description: "Surrounded by warm aesthetics and gentle smiles.",
       objectPosition: "object-center",
     },
     {
-      id: 8,
+      id: 7,
       title: "Festive Night Sparkle",
       category: "Celebration",
       icon: <Sparkles className="w-5 h-5 text-yellow-300" />,
-      image: "assets/riddhi_green_ethnic.jpg",
-      description: "Shining bright under evening fairy lights in emerald green.",
+      image: "assets/riddhi/Gemini_Generated_Image_jl8fqpjl8fqpjl8f.png",
+      description: "Shining bright with enchanting grace.",
       objectPosition: "object-top",
     },
     {
-      id: 9,
-      title: "Campus Festivities & Joy",
+      id: 8,
+      title: "Vibrant Joy & Laughter",
       category: "Memories",
       icon: <Sun className="w-5 h-5 text-orange-300" />,
-      image: "assets/riddhi_saree_event.jpg",
-      description: "Radiant laughter amidst vibrant butterfly colors and celebrations.",
-      objectPosition: "object-top",
-    },
-    {
-      id: 10,
-      title: "Glamour & Style",
-      category: "Style",
-      icon: <Camera className="w-5 h-5 text-purple-300" />,
-      image: "assets/riddhi_pink_gown.jpg",
-      description: "Shimmering in blush pink with exquisite grace and charm.",
+      image: "assets/riddhi/Gemini_Generated_Image_nccgylnccgylnccg.png",
+      description: "Radiant laughter creating unforgettable memories.",
       objectPosition: "object-top",
     },
   ];
