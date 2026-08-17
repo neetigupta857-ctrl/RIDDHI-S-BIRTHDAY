@@ -17,9 +17,16 @@ export function CoverPortraitGlow() {
     >
       <div className="relative w-full h-full rounded-[22px] overflow-hidden">
         <img
-          src="assets/riddhi_cover.jpg"
+          src="/assets/riddhi_cover.jpg"
           alt="Riddhi 19th Birthday Cover"
           className="portrait-img"
+          onError={(e) => {
+            const target = e.currentTarget;
+            if (!target.dataset.tried) {
+              target.dataset.tried = 'true';
+              target.src = '/riddhi_cover.jpg';
+            }
+          }}
         />
         <div className="portrait-badge">
           <span>🌸</span> RIDDHI • 19 <span>✨</span>
