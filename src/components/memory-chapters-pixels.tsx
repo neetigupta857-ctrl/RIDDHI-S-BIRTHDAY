@@ -1,21 +1,15 @@
 import React from 'react';
 import PixelTransition from './PixelTransition';
+import sarvagyaRiddhiCouple from '../../assets/sarvagya_riddhi_couple.jpg';
 
 export function MemoryChaptersPixels() {
   const photoContent = (
     <div className="relative w-full h-full group overflow-hidden rounded-[24px]">
       <img
-        src="/assets/sarvagya_riddhi_couple.jpg"
+        src={sarvagyaRiddhiCouple}
         alt="Sarvagya & Riddhi Memory"
         className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
         style={{ height: '100%', width: '100%', objectFit: 'cover', objectPosition: 'center top' }}
-        onError={(e) => {
-          const target = e.currentTarget;
-          if (!target.dataset.tried) {
-            target.dataset.tried = 'true';
-            target.src = '/sarvagya_riddhi_couple.jpg';
-          }
-        }}
       />
     </div>
   );
