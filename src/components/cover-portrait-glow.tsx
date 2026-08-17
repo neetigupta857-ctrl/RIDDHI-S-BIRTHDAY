@@ -17,7 +17,7 @@ export function CoverPortraitGlow() {
     >
       <div className="relative w-full h-full rounded-[22px] overflow-hidden">
         <img
-          src="assets/riddhi/bdy pic 1.jpeg"
+          src="/assets/riddhi/bdy pic 1.jpeg"
           alt="Riddhi 19th Birthday Cover"
           className="portrait-img"
         />

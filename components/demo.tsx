@@ -15,7 +15,7 @@ export function GlareCardDemo() {
       <GlareCard className="flex flex-col items-center justify-center relative">
         <img
           className="h-full w-full absolute inset-0 object-cover"
-          src="assets/riddhi/Gemini_Generated_Image_goainogoainogoai.png"
+          src="/assets/riddhi/Gemini_Generated_Image_goainogoainogoai.png"
           alt="Cozy & Botanical Vibes"
         />
         <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
@@ -29,7 +29,7 @@ export function GlareCardDemo() {
       <GlareCard className="flex flex-col items-start justify-end py-8 px-6 relative">
         <img
           className="h-full w-full absolute inset-0 object-cover"
-          src="assets/riddhi/Gemini_Generated_Image_usjlbcusjlbcusjl.png"
+          src="/assets/riddhi/Gemini_Generated_Image_usjlbcusjlbcusjl.png"
           alt="Festive Night Sparkle"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
@@ -53,7 +53,7 @@ export function RiddhiPhotoGallery() {
       title: "19th Birthday Milestone",
       category: "Special",
       icon: <Heart className="w-5 h-5 text-slate-100 fill-white" />,
-      image: "assets/riddhi/Gemini_Generated_Image_usjlbcusjlbcusjl.png",
+      image: "/assets/riddhi/Gemini_Generated_Image_usjlbcusjlbcusjl.png",
       description: "Embodying beauty, elegance, and warmth at 19.",
       objectPosition: "object-center",
     },
@@ -62,7 +62,7 @@ export function RiddhiPhotoGallery() {
       title: "Royal Heritage Grace",
       category: "Royal Heritage",
       icon: <Sparkles className="w-5 h-5 text-amber-300" />,
-      image: "assets/riddhi/WhatsApp Image 2026-08-01 at 00.42.51.jpeg",
+      image: "/assets/riddhi/WhatsApp Image 2026-08-01 at 00.42.51.jpeg",
       description: "Stunning in ornate traditional heritage attire.",
       objectPosition: "object-top",
     },
@@ -71,7 +71,7 @@ export function RiddhiPhotoGallery() {
       title: "Golden Sunshine Smile",
       category: "Sunshine",
       icon: <Sun className="w-5 h-5 text-amber-300" />,
-      image: "assets/riddhi/Gemini_Generated_Image_2mnfx32mnfx32mnf.png",
+      image: "/assets/riddhi/Gemini_Generated_Image_2mnfx32mnfx32mnf.png",
       description: "Radiant warmth and delicate charm.",
       objectPosition: "object-top",
     },
@@ -80,7 +80,7 @@ export function RiddhiPhotoGallery() {
       title: "Pure Elegance",
       category: "Elegance",
       icon: <Flower2 className="w-5 h-5 text-pink-300" />,
-      image: "assets/riddhi/Gemini_Generated_Image_68xfa868xfa868xf.png",
+      image: "/assets/riddhi/Gemini_Generated_Image_68xfa868xfa868xf.png",
       description: "Poised and beautiful, blooming like a white lily.",
       objectPosition: "object-top",
     },
@@ -89,7 +89,7 @@ export function RiddhiPhotoGallery() {
       title: "Serene Moments",
       category: "Nature",
       icon: <Flower2 className="w-5 h-5 text-emerald-300" />,
-      image: "assets/riddhi/Gemini_Generated_Image_efkdd3efkdd3efkd.png",
+      image: "/assets/riddhi/Gemini_Generated_Image_efkdd3efkdd3efkd.png",
       description: "Graceful and captivating in every frame.",
       objectPosition: "object-top",
     },
@@ -98,7 +98,7 @@ export function RiddhiPhotoGallery() {
       title: "Cozy Passions",
       category: "Passions",
       icon: <Coffee className="w-5 h-5 text-amber-300" />,
-      image: "assets/riddhi/Gemini_Generated_Image_j7h2nnj7h2nnj7h2.png",
+      image: "/assets/riddhi/Gemini_Generated_Image_j7h2nnj7h2nnj7h2.png",
       description: "Surrounded by warm aesthetics and gentle smiles.",
       objectPosition: "object-center",
     },
@@ -107,7 +107,7 @@ export function RiddhiPhotoGallery() {
       title: "Festive Night Sparkle",
       category: "Celebration",
       icon: <Sparkles className="w-5 h-5 text-yellow-300" />,
-      image: "assets/riddhi/Gemini_Generated_Image_jl8fqpjl8fqpjl8f.png",
+      image: "/assets/riddhi/Gemini_Generated_Image_jl8fqpjl8fqpjl8f.png",
       description: "Shining bright with enchanting grace.",
       objectPosition: "object-top",
     },
@@ -116,7 +116,7 @@ export function RiddhiPhotoGallery() {
       title: "Vibrant Joy & Laughter",
       category: "Memories",
       icon: <Sun className="w-5 h-5 text-orange-300" />,
-      image: "assets/riddhi/Gemini_Generated_Image_nccgylnccgylnccg.png",
+      image: "/assets/riddhi/Gemini_Generated_Image_nccgylnccgylnccg.png",
       description: "Radiant laughter creating unforgettable memories.",
       objectPosition: "object-top",
     },
