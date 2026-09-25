@@ -15,12 +15,8 @@ export function CoverPortraitGlow() {
       colors={['#bae6fd', '#f472b6', '#c084fc']}
       className="portrait-frame !p-2"
     >
-      <div className="relative w-full h-full rounded-[22px] overflow-hidden">
-        <img
-          src="https://picsum.photos/seed/riddhiCover/400/600"
-          alt="Riddhi 19th Birthday Cover"
-          className="portrait-img"
-        />
+      <div className="relative w-full h-full rounded-[22px] overflow-hidden bg-slate-800 flex items-center justify-center">
+        <span className="text-slate-600 font-bold text-3xl opacity-30 text-center">TEST CASE COVER</span>
         <div className="portrait-badge">
           <span>🌸</span> RIDDHI • 19 <span>✨</span>
         </div>

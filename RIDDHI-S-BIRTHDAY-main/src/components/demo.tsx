@@ -1,54 +1,40 @@
 import { GlareCard } from "@/components/ui/glare-card";
 import { Sparkles, Heart, Coffee, Flower2, Camera, Sun } from "lucide-react";
 
-const imgGoai = "https://picsum.photos/seed/goai/600/800";
-const imgUsjl = "https://picsum.photos/seed/usjl/600/800";
-const imgWhatsapp = "https://picsum.photos/seed/whatsapp/600/800";
-const img2mnf = "https://picsum.photos/seed/2mnf/600/800";
-const img68xf = "https://picsum.photos/seed/68xf/600/800";
-const imgEfkd = "https://picsum.photos/seed/efkd/600/800";
-const imgJ7h2 = "https://picsum.photos/seed/j7h2/600/800";
-const imgJl8f = "https://picsum.photos/seed/jl8f/600/800";
-const imgNccg = "https://picsum.photos/seed/nccg/600/800";
-
 export function GlareCardDemo() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-      <GlareCard className="flex flex-col items-center justify-center p-6 text-center">
+      <GlareCard className="flex flex-col items-center justify-center p-6 text-center bg-slate-800">
         <Flower2 className="h-16 w-16 text-pink-300 mb-4 animate-pulse" />
-        <p className="font-bold text-white text-xl">Grace & Elegance</p>
+        <p className="font-bold text-white text-xl">Test Case 1</p>
         <p className="font-normal text-sm text-neutral-300 mt-2">
-          Pure white lily vibes celebrating Riddhi&apos;s 19th milestone!
+          Generic test case UI replacing the old photo.
         </p>
       </GlareCard>
 
-      <GlareCard className="flex flex-col items-center justify-center relative">
-        <img
-          className="h-full w-full absolute inset-0 object-cover"
-          src={imgGoai}
-          alt="Cozy & Botanical Vibes"
-        />
+      <GlareCard className="flex flex-col items-center justify-center relative bg-slate-800">
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+            <span className="text-slate-600 font-bold text-2xl opacity-50">TEST CASE 2</span>
+        </div>
         <div className="absolute inset-0 bg-black/40 flex flex-col justify-end p-6">
           <span className="flex items-center gap-2 text-amber-200 text-xs font-semibold uppercase tracking-wider mb-1">
-            <Coffee className="w-4 h-4" /> Cozy Passions
+            <Coffee className="w-4 h-4" /> Category 2
           </span>
-          <p className="font-bold text-white text-lg">Cozy & Botanical Vibes</p>
+          <p className="font-bold text-white text-lg">Test Case 2</p>
         </div>
       </GlareCard>
 
-      <GlareCard className="flex flex-col items-start justify-end py-8 px-6 relative">
-        <img
-          className="h-full w-full absolute inset-0 object-cover"
-          src={imgUsjl}
-          alt="Festive Night Sparkle"
-        />
+      <GlareCard className="flex flex-col items-start justify-end py-8 px-6 relative bg-slate-800">
+        <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+            <span className="text-slate-600 font-bold text-2xl opacity-50">TEST CASE 3</span>
+        </div>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent flex flex-col justify-end p-6">
           <span className="flex items-center gap-2 text-pink-300 text-xs font-semibold uppercase tracking-wider mb-1">
-            <Sparkles className="w-4 h-4" /> Magical Moments
+            <Sparkles className="w-4 h-4" /> Category 3
           </span>
-          <p className="font-bold text-white text-lg">Festive Night Sparkle</p>
+          <p className="font-bold text-white text-lg">Test Case 3</p>
           <p className="font-normal text-sm text-neutral-200 mt-2">
-            Shining bright under evening fairy lights in traditional attire.
+            Generic testcase content replacing photo.
           </p>
         </div>
       </GlareCard>
@@ -60,96 +46,78 @@ export function RiddhiPhotoGallery() {
   const galleryItems = [
     {
       id: 1,
-      title: "19th Birthday Milestone",
-      category: "Special",
+      title: "Test Case 1",
+      category: "Test Category",
       icon: <Heart className="w-5 h-5 text-slate-100 fill-white" />,
-      image: imgUsjl,
-      description: "Embodying beauty, elegance, and warmth at 19.",
-      objectPosition: "object-center",
+      description: "Generic test case description.",
     },
     {
       id: 2,
-      title: "Royal Heritage Grace",
-      category: "Royal Heritage",
+      title: "Test Case 2",
+      category: "Test Category",
       icon: <Sparkles className="w-5 h-5 text-amber-300" />,
-      image: imgWhatsapp,
-      description: "Stunning in ornate traditional heritage attire.",
-      objectPosition: "object-top",
+      description: "Generic test case description.",
     },
     {
       id: 3,
-      title: "Golden Sunshine Smile",
-      category: "Sunshine",
+      title: "Test Case 3",
+      category: "Test Category",
       icon: <Sun className="w-5 h-5 text-amber-300" />,
-      image: img2mnf,
-      description: "Radiant warmth and delicate charm.",
-      objectPosition: "object-top",
+      description: "Generic test case description.",
     },
     {
       id: 4,
-      title: "Pure Elegance",
-      category: "Elegance",
+      title: "Test Case 4",
+      category: "Test Category",
       icon: <Flower2 className="w-5 h-5 text-pink-300" />,
-      image: img68xf,
-      description: "Poised and beautiful, blooming love a white lily.",
-      objectPosition: "object-top",
+      description: "Generic test case description.",
     },
     {
       id: 5,
-      title: "Serene Moments",
-      category: "Nature",
+      title: "Test Case 5",
+      category: "Test Category",
       icon: <Flower2 className="w-5 h-5 text-emerald-300" />,
-      image: imgEfkd,
-      description: "Graceful and captivating in every frame.",
-      objectPosition: "object-top",
+      description: "Generic test case description.",
     },
     {
       id: 6,
-      title: "Cozy Passions",
-      category: "Passions",
+      title: "Test Case 6",
+      category: "Test Category",
       icon: <Coffee className="w-5 h-5 text-amber-300" />,
-      image: imgJ7h2,
-      description: "Surrounded by warm aesthetics and gentle smiles.",
-      objectPosition: "object-center",
+      description: "Generic test case description.",
     },
     {
       id: 7,
-      title: "Festive Night Sparkle",
-      category: "Celebration",
+      title: "Test Case 7",
+      category: "Test Category",
       icon: <Sparkles className="w-5 h-5 text-yellow-300" />,
-      image: imgJl8f,
-      description: "Shining bright with enchanting grace.",
-      objectPosition: "object-top",
+      description: "Generic test case description.",
     },
     {
       id: 8,
-      title: "Vibrant Joy & Laughter",
-      category: "Memories",
+      title: "Test Case 8",
+      category: "Test Category",
       icon: <Sun className="w-5 h-5 text-orange-300" />,
-      image: imgNccg,
-      description: "Radiant laughter creating unforgettable memories.",
-      objectPosition: "object-top",
-    },
+      description: "Generic test case description.",
+    }
   ];
 
   return (
     <section className="py-12 px-4 max-w-7xl mx-auto">
       <div className="text-center mb-10">
-        <span className="text-sm font-semibold uppercase tracking-widest text-pink-400">Treasured Memories</span>
+        <span className="text-sm font-semibold uppercase tracking-widest text-pink-400">Test Cases</span>
         <h2 className="text-3xl md:text-4xl font-extrabold text-slate-100 mt-2">
-          Riddhi&apos;s Photo Gallery & Memories
+          Test Case Gallery
         </h2>
         <p className="text-slate-400 mt-2 text-base">Hover over each card to experience the interactive 3D foil-glare effect!</p>
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
         {galleryItems.map((item) => (
-          <GlareCard key={item.id} className="relative flex flex-col justify-end p-6 overflow-hidden">
-            <img
-              src={item.image}
-              alt={item.title}
-              className={`absolute inset-0 w-full h-full object-cover ${item.objectPosition || 'object-top'} transition-transform duration-500 hover:scale-105`}
-            />
+          <GlareCard key={item.id} className="relative flex flex-col justify-end p-6 overflow-hidden bg-slate-800">
+            <div className="absolute inset-0 w-full h-full flex items-center justify-center">
+                <span className="text-slate-600 font-bold text-3xl opacity-30">TEST CASE {item.id}</span>
+            </div>
             <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent pointer-events-none" />
             <div className="relative z-10">
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-900/80 border border-slate-700 text-slate-200 mb-2 backdrop-blur-sm">

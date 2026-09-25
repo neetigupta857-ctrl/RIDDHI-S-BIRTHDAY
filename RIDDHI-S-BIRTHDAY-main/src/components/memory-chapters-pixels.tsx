@@ -1,16 +1,10 @@
 import React from 'react';
 import PixelTransition from './PixelTransition';
-const sarvagyaRiddhiCouple = "https://picsum.photos/seed/couple/800/600";
 
 export function MemoryChaptersPixels() {
   const photoContent = (
-    <div className="relative w-full h-full group overflow-hidden rounded-[24px]">
-      <img
-        src={sarvagyaRiddhiCouple}
-        alt="Sarvagya & Riddhi Memory"
-        className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-        style={{ height: '100%', width: '100%', objectFit: 'cover', objectPosition: 'center top' }}
-      />
+    <div className="relative w-full h-full group overflow-hidden rounded-[24px] bg-slate-800 flex items-center justify-center">
+        <span className="text-slate-600 font-bold text-3xl opacity-30 text-center px-4">TEST CASE MEMORY</span>
     </div>
   );
 
@@ -37,7 +31,7 @@ export function MemoryChaptersPixels() {
         className="text-lg leading-relaxed max-w-sm mb-6 font-medium italic"
         style={{ color: '#E2E8F0', fontFamily: 'var(--font-body)' }}
       >
-        Sometimes I ask &quot;kya hua&quot; just to hear &quot;tumse pyaar&quot;, but all I get is &quot;kuch nhi&quot;
+        Sometimes I ask "kya hua" just to hear "tumse pyaar", but all I get is "kuch nhi"
       </p>
       <div
         className="px-5 py-2 rounded-full text-xs font-semibold tracking-wider"
@@ -79,4 +73,3 @@ export function MemoryChaptersPixels() {
     </div>
   );
 }
-
